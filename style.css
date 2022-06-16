@@ -1,0 +1,199 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    height: 40px;
+    background-color: hsl(184, 100%, 22%);
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 900;
+    font-size: 25px;
+}
+nav a{
+    padding-left: 20px;
+    padding-right: 20px;
+    color: whitesmoke;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+nav a:hover{
+    color: hsl(179, 100%, 13%);
+    background: white;
+    border: 1px solid;
+    border-radius: 5px;
+    text-align: center;
+}
+
+body{
+    margin-top: 30px;
+    margin-left: 20%;
+    background-color: black;
+    min-height: 100vh;
+}
+.one{
+    grid-area: upred;
+    background-color: red;
+    height: 150px;
+}
+.two{
+    grid-area: uporange;
+    background-color: orange;
+}
+.three{
+    grid-area: downleftgreen;
+    background-color:green;
+}
+.four{
+    grid-area: downupcyan;
+    background-color: rgb(78, 197, 252);
+}
+.five{
+    grid-area: downrightcyan;
+    background-color: rgb(78, 197, 252);
+}
+.container{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    width: 700px;
+    padding: 20px;
+}
+.gridWrap{
+    display: grid;
+    grid-template-areas: 'upred upred  uporange'
+    'downleftgreen  downupcyan downupcyan'
+    'downleftgreen downrightcyan downrightcyan'
+    ;
+    gap: 5px;
+    padding: 5px;
+    width: 500px;
+}
+.gridWrap > div{
+    
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+
+/* The styling for the index page is down below */
+
+main > .container{
+    height: 400px;
+    background-color: white;
+    font-size: 15px;
+}
+.para{
+    margin-top: 15px;
+    color: hsla(0, 0%, 100%, 0.75); 
+    font-size: 12px; 
+    font-family: 'Lexend Deca', sans-serif;
+    text-align: left;
+}
+.head{
+    font-family: 'Big Shoulders Display', cursive;
+    color: hsl(0, 0%, 95%);
+    font-size: 18px;
+    margin-top: 10px;
+}
+.content{
+    display: flex;
+    /* margin-top: 70px; */
+    justify-content: center;
+    align-items: center;
+}
+.card1{
+    background-color: hsl(31, 77%, 52%);
+    height: 300px;
+    width: 170px;
+    padding: 15px;
+}
+.card1 button{
+    color: hsl(31, 77%, 52%);
+}
+.card1 button:hover{
+    background-color: hsl(31, 77%, 52%);
+    color: hsla(0, 0%, 100%, 0.75);
+    border: 2px solid hsla(0, 0%, 100%, 0.75);
+    cursor: pointer;
+}
+.card2{
+    background-color: hsl(184, 100%, 22%);
+    height: 300px;
+    width: 170px;
+    padding: 15px;
+}
+.card2 button{
+    color: hsl(184, 100%, 22%);
+}
+.card2 button:hover{
+    background-color: hsl(184, 100%, 22%);
+    color: hsla(0, 0%, 100%, 0.75);
+    border: 2px solid hsla(0, 0%, 100%, 0.75);
+    cursor: pointer;
+}
+.card3{
+    background-color: hsl(179, 100%, 13%);
+    height: 300px;
+    width: 170px;
+    padding: 15px;
+}
+.card3 button{
+    color: hsl(179, 100%, 13%) ;
+}
+.card3 button:hover{
+    background-color: hsl(179, 100%, 13%);
+    color: hsla(0, 0%, 100%, 0.75);
+    border: 2px solid hsla(0, 0%, 100%, 0.75);
+    cursor: pointer;
+}
+.cards{
+    font-size: 15px;
+
+
+}
+.but{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+button{
+    border-radius: 200px;
+    border-style: none;
+    padding: 8px;
+    text-align: center;
+    margin-top: 15px;
+    background-color: hsl(0, 0%, 95%);
+}
+@media (max-width: 375px) {
+    body{
+        width: 100%;
+        margin: 0;
+    }
+    main > .container{
+        width: 100%;
+        background-color: white;
+        font-size: 15px;
+        height: 100%;
+    }
+    .content{
+        width: 100%;
+        display: flex;
+        /* margin-top: 70px; */
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    header{
+        width: 100%;
+    }
+    .card1 .card1 .card3{
+        width: 100%;
+    }
+}
+
